@@ -1,5 +1,21 @@
+# Recommended Python version: 3.11
+# Core dependencies: Streamlit inference app + serialized scikit-learn model
 streamlit==1.65.0
-joblib==1.2.0
 numpy==1.26.4
 pandas==2.3.3
 scikit-learn==1.2.2
+joblib==1.2.0
+imbalanced-learn==0.10.1
+
+# # Notebook: EDA, feature engineering, visualization and statistical analysis
+# scipy==1.15.3
+# matplotlib==3.10.7
+# seaborn==0.13.2
+# statsmodels==0.14.5
+# ipykernel
+
+# # Notebook: model training, hyperparameter optimization and experiment tracking
+# xgboost==2.1.4
+# optuna==4.5.0
+# mlflow==2.22.2
+# dagshub==0.6.3
