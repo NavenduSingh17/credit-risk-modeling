@@ -3,14 +3,11 @@
 #---------------------------------------------------------------------------------------------------------
 
 import joblib
-
 import numpy as np
 import pandas as pd
 
 # drop_generated_column() function is required for the 'drop_specific_column' named_step in .joblib
-# Can also put this in a separate utils.py and import here
-def drop_generated_column(input_df):
-    return input_df.drop(columns=['loan_purpose_Home'])
+from utils import drop_generated_column
 
 MODEL_PATH = 'artifacts/classifier.joblib'
 
