@@ -4,9 +4,6 @@
 
 import joblib
 
-import imblearn.pipeline 
-from imblearn.pipeline import Pipeline as ImbPipeline
-
 import numpy as np
 import pandas as pd
 
