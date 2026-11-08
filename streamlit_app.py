@@ -5,7 +5,13 @@
 import streamlit as st
 from prediction_helper import predict
 
-st.markdown("### CREDIT RISK MODELING")
+st.markdown("### CREDIT RISK ASSESSMENT")
+st.markdown(
+    "<p style='font-size:16px; color:gray; margin-top:-12px;'>"
+    "AI-Assisted Loan Default Risk Scoring"
+    "</p>",
+    unsafe_allow_html=True
+)
 st.write("")
 
 categorical_options = {
