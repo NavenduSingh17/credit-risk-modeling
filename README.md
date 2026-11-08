@@ -1,11 +1,38 @@
+<div align="center">
+
 # Credit Risk Modeling — Loan Default Prediction
 
 An end-to-end machine learning project for an NBFC-style lending use case. The objective is to estimate the probability that a loan applicant will default, convert that probability into an internal credit score and rating, and make the prediction available through an interactive Streamlit application.
 
-<p align="left">
-  <a href="https://navendu-singh-credit-risk-modeling.streamlit.app"><strong>Live Streamlit App</strong></a> ·
-  <a href="https://dagshub.com/NavenduSingh17/credit-risk-scoring-mlflow.mlflow/#/experiments/0/runs?searchFilter=&orderByKey=attributes.start_time&orderByAsc=false&startTime=ALL&lifecycleFilter=Active&modelVersionFilter=All+Runs&datasetsFilter=W10%3D"><strong>MLflow Experiments on DagsHub</strong></a>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-E3EDFF?style=flat&logo=python&logoColor=3776AB" />
+  <img src="https://img.shields.io/badge/Streamlit-FFE0E0?style=flat&logo=streamlit&logoColor=FF4B4B" />
+  <img src="https://img.shields.io/badge/Scikit--learn-FFE5DC?style=flat&logo=scikitlearn&logoColor=F7931E" />
+  <img src="https://img.shields.io/badge/XGBoost-DCF3E2?style=flat&logo=xgboost&logoColor=159447" />
+  <img src="https://img.shields.io/badge/Imbalanced--learn-E8E1FF?style=flat&logo=python&logoColor=6C4AB6" />
+  <img src="https://img.shields.io/badge/Optuna-E3F2FD?style=flat&logo=optuna&logoColor=3B75A5" />
+  <img src="https://img.shields.io/badge/MLflow-DDEBFF?style=flat&logo=mlflow&logoColor=0194E2" />
+  <img src="https://img.shields.io/badge/DagsHub-FCE8D5?style=flat&logo=dagshub&logoColor=E56A24" />
 </p>
+
+[Open the live application](https://navendu-singh-credit-risk-modeling.streamlit.app)
+&nbsp; | &nbsp;
+[View MLflow experiments on DagsHub](https://dagshub.com/NavenduSingh17/credit-risk-scoring-mlflow.mlflow/#/experiments/0/runs?searchFilter=&orderByKey=attributes.start_time&orderByAsc=false&startTime=ALL&lifecycleFilter=Active&modelVersionFilter=All+Runs&datasetsFilter=W10%3D)
+
+</div>
+
+## Preview
+
+#### Credit Risk Assessment for Loan Officer Review
+![Credit Risk Assessment - Prediction Result](screenshots/app-interface.png)
+
+#### Accessing the Live Application
+The application is hosted on Streamlit Community Cloud. If it has gone to sleep after a period of inactivity, open the live demo link and select **"Yes, get this app back up!"** when prompted. Wait for the app to start before entering applicant details.
+
+#### Tracked Experiments on MLflow (DasgHub)
+![Tracked Experiments](screenshots/dagshub-mlflow.png)
+
+---
 
 ## Table of Contents
 
@@ -79,8 +106,8 @@ These are project-defined internal score bands, not official bureau or regulator
 ## Project Workflow
 
 1. **Data preparation and EDA** — combined bureau, customer and loan-level data; inspected data quality, missing values, distributions, outliers, class imbalance and feature relationships.
-2. **Feature engineering** — created borrower/loan risk indicators based on lending context.
-3. **Feature selection** — used Information Value (IV) and Variance Inflation Factor (VIF) to assess predictive usefulness and multicollinearity.
+2. **Feature engineering** — created borrower/loan risk indicators (`loan_to_income`, `delinquency_ratio`, and `avg_dpd_per_delinquency`) based on lending context.
+3. **Feature selection** — used Weight of Evidence (WoE), Information Value (IV), correlation analysis, and Variance Inflation Factor (VIF) to assess predictive usefulness and multicollinearity.
 4. **Preprocessing** — scaled numerical variables and one-hot encoded categorical variables in a reusable pipeline.
 5. **Model experimentation** — trained and compared Logistic Regression, Random Forest and XGBoost approaches, with further experiments focused on Logistic Regression and XGBoost.
 6. **Imbalance handling and tuning** — evaluated random undersampling and SMOTE; used RandomizedSearchCV and Optuna for hyperparameter optimization.
@@ -256,4 +283,8 @@ Model experiments were tracked using MLflow with DagsHub as the remote tracking 
 
 ---
 
-**Author:** Navendu Singh
+<div align="center">
+
+**Built by [Navendu Singh](https://github.com/NavenduSingh17)**
+
+</div>
