@@ -29,7 +29,7 @@ An end-to-end machine learning project for an NBFC-style lending use case. The o
 #### Accessing the Live Application
 The application is hosted on Streamlit Community Cloud. If it has gone to sleep after a period of inactivity, open the live demo link and select **"Yes, get this app back up!"** when prompted. Wait for the app to start before entering applicant details.
 
-#### Tracked Experiments on MLflow (DasgHub)
+#### Tracked Experiments on MLflow (DagsHub)
 ![Tracked Experiments](screenshots/dagshub-mlflow.png)
 
 ---
